@@ -1,5 +1,9 @@
 //Components
 @import "./components/navbar";
 
+//Layout
+@import "./layout/body.scss";
+
 //Utilities
 @import "./utilities/variables";
+@import "./utilities/reset"

@@ -1,0 +1,38 @@
+@import "../utilities/variables";
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary;
+    color: antiquewhite;
+    box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-item{
+    padding: 0px 5px 3px;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 5px;
+    font-size: 1em;
+    background-color: aliceblue;
+    box-shadow: 5px 5px  $complement;
+    border: solid 2px $font-secondary;
+}
+
+.nav-item:hover{
+    color: #fff;
+    background-color: $complement;
+    box-shadow: 5px 5px  #fff;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
