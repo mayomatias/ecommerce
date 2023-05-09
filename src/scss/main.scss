@@ -1,9 +1,13 @@
+//Utilities
+@import "./utilities/reset";
+@import "./utilities/variables";
+
+//==========> Media queries
+@import "./utilities/media-querys/mobile";
+
 //Components
 @import "./components/navbar";
 
 //Layout
 @import "./layout/body.scss";
 
-//Utilities
-@import "./utilities/variables";
-@import "./utilities/reset"

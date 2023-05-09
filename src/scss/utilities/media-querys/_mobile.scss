@@ -1,0 +1,13 @@
+@media (max-width: 576px) {
+    nav {
+        height: 15vw;
+    }
+
+    nav ul {
+        z-index: 1;
+        margin-left: 0;
+        display: block;
+        background-color: aliceblue;
+        margin-top: 15vw;
+    }
+}
