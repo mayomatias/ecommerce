@@ -6,13 +6,15 @@ import CartWidget from '../CartWidget/CartWidget';
 const NavBar = () =>{
   return( 
     <nav>
-      <ul id="menu">
+      <ul className="drop-menu">
         <li className="nav-item"><a>Productos</a></li>
         <li className="nav-item"><a>Nosotros</a></li>
         <li className="nav-item"><a>Ayuda</a></li>
       </ul>
-      <div>
-        <h1>Search</h1>
+      <div id='search-box'>
+        <div />
+        <input type='text' />
+        <div />
       </div>
       <CartWidget />
     </nav>
