@@ -1,6 +1,9 @@
 @import "../../utilities/variables";
 
 @media (max-width: 576px) {
+    header {
+        height: 30vw;
+    }
     nav {
         height: 15vw;
     }
