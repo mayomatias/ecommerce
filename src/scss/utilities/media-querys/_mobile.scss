@@ -1,21 +1,32 @@
 @import "../../utilities/variables";
 
 @media (max-width: 576px) {
-    header {
-        height: 30vw;
-    }
     nav {
-        height: 15vw;
+        flex-direction: column;
+        
     }
-
-    nav ul {
-        z-index: 1;
-        margin-left: 0;
-        display: block;
-        background-color: aliceblue;
-        margin-top: 15vw;
+    #brand{
+        margin: 0.5rem;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        z-index: 2;
+    }
+    #nav-drop-down-container{
+        display: flex;
+        width: 95%;
+        height: 95%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.3rem;
     }
     #nav-drop-menu{
+        z-index: 1;
+        margin-left: 0;
+        background-color: aliceblue;
+        margin-top: 30vw;
         width: 75%;
         position: fixed;
         top: 0%;
@@ -39,11 +50,11 @@
         align-items: center;
     }
     #search-box{
-        height: 50%;
+        height: 90%;
         background-color: $backgBackUp;      
         display: flex;
-        align-items: stretch;
         border-radius: 50px;
+        
     }  
     #search-box input {
         background: none;
@@ -61,4 +72,10 @@
     .nav-drop-menu-visible{
         display: flex;
     }
+    .nav-item {
+        
+    }
+    .nav-item a:hover{
+        color: #fff;
+    } 
 }

@@ -19,6 +19,12 @@ nav{
     box-shadow: 5px 5px  $complement;
     border: solid 2px $font-secondary;
 }
+.nav-item a{
+    color: #000;
+}
+.nav-item a:hover {
+    color: #fff;
+}
 
 .nav-item:hover{
     color: #fff;
@@ -26,10 +32,7 @@ nav{
     box-shadow: 5px 5px  #fff;
 }
 
-a{
-    color: #000;
-    text-decoration: none;
-}
+
 
 ul {
     list-style: none;

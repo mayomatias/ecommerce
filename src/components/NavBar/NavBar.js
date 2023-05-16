@@ -21,26 +21,28 @@ const NavBar = () =>{
   }
   
   return( 
-    <header>
-      <h1>GammerShop</h1>
-      <nav>
-        <ul className={dropDowMenu} id='nav-drop-menu'>
-          <li className="nav-item"><a>Productos</a></li>
-          <li className="nav-item"><a>Nosotros</a></li>
-          <li className="nav-item"><a>Ayuda</a></li>
-        </ul>
-        <div>
-          {navBarState ? <MenuIcon onClick={imprimir} /> : <CloseIcon onClick={imprimir} />}
-        
+  
+     
+      <nav> 
+        <div id='brand'>
+          <h1>GammerShop</h1>
         </div>
-        <div id='search-box'>
-          <div />
-          <input type='text' />
-          <div />
+        <div id='nav-drop-down-container'>
+          <ul className={dropDowMenu} id='nav-drop-menu'>
+            <li className="nav-item"><a>Productos</a></li>
+            <li className="nav-item"><a>Nosotros</a></li>
+            <li className="nav-item"><a>Ayuda</a></li>
+          </ul>
+          <div>
+            {navBarState ? <MenuIcon onClick={imprimir} /> : <CloseIcon onClick={imprimir} />}
+          </div>
+          <div id='search-box'>
+            <input type='text' />
+          </div>
+          <CartWidget />
         </div>
-        <CartWidget />
       </nav>
-    </header>
+   
   );
 }
 

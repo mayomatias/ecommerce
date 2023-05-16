@@ -3,18 +3,37 @@
   margin: 0;
   box-sizing: border-box; }
 
+@font-face {
+  font-family: TechnoRaceItalic;
+  src: url("../fonts/TechnoRaceItalic.otf") format("opentype");
+  font-weight: 100; }
+
+#brand, #nav-drop-menu {
+  font-family: TechnoRaceItalic; }
+
 @media (max-width: 576px) {
-  header {
-    height: 30vw; }
   nav {
-    height: 15vw; }
-  nav ul {
+    flex-direction: column; }
+  #brand {
+    margin: 0.5rem;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    z-index: 2; }
+  #nav-drop-down-container {
+    display: flex;
+    width: 95%;
+    height: 95%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem; }
+  #nav-drop-menu {
     z-index: 1;
     margin-left: 0;
-    display: block;
     background-color: aliceblue;
-    margin-top: 15vw; }
-  #nav-drop-menu {
+    margin-top: 30vw;
     width: 75%;
     position: fixed;
     top: 0%;
@@ -32,10 +51,9 @@
     justify-content: center;
     align-items: center; }
   #search-box {
-    height: 50%;
+    height: 90%;
     background-color: #3e3c45;
     display: flex;
-    align-items: stretch;
     border-radius: 50px; }
   #search-box input {
     background: none;
@@ -48,7 +66,9 @@
   .nav-drop-menu-invisible {
     display: none; }
   .nav-drop-menu-visible {
-    display: flex; } }
+    display: flex; }
+  .nav-item a:hover {
+    color: #fff; } }
 
 nav {
   display: flex;
@@ -68,14 +88,16 @@ nav {
   box-shadow: 5px 5px #4717F6;
   border: solid 2px black; }
 
+.nav-item a {
+  color: #000; }
+
+.nav-item a:hover {
+  color: #fff; }
+
 .nav-item:hover {
   color: #fff;
   background-color: #4717F6;
   box-shadow: 5px 5px  #fff; }
-
-a {
-  color: #000;
-  text-decoration: none; }
 
 ul {
   list-style: none; }
@@ -83,13 +105,3 @@ ul {
 body {
   background-color: #ababab;
   font-family: 'Josefin Sans', sans-serif; }
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #080317ca;
-  color: antiquewhite;
-  box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
-  width: 100%; }

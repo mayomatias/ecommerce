@@ -2,6 +2,10 @@
 @import "./utilities/reset";
 @import "./utilities/variables";
 
+//Base
+@import "./base/typography";
+
+
 //==========> Media queries
 @import "./utilities/media-querys/mobile";
 
@@ -10,5 +14,6 @@
 
 //Layout
 @import "./layout/body.scss";
-@import "./layout/header.scss";
+
+
 
