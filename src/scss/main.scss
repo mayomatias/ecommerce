@@ -7,7 +7,10 @@
 
 
 //==========> Media queries
+@import "./utilities/media-querys/large";
+@import "./utilities/media-querys/medium";
 @import "./utilities/media-querys/mobile";
+
 
 //Components
 @import "./components/navbar";

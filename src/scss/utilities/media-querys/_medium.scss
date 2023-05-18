@@ -1,10 +1,8 @@
-@import "../../utilities/variables";
 
-@media (max-width: 576px) {
-    
+@media (max-width: 992px) {
     nav {
         flex-direction: column;
-
+        
     }
     #brand{
         margin: 0.5rem;
@@ -73,7 +71,9 @@
     .nav-drop-menu-visible{
         display: flex;
     }
-    
+    .nav-item {
+        
+    }
     .nav-item a:hover{
         color: #fff;
     } 
